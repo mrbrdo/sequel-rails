@@ -1,4 +1,4 @@
-require "sequel"
+require 'sequel/no_core_ext'
 
 require "rails"
 require "active_model/railtie"
