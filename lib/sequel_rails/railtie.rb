@@ -72,7 +72,7 @@ module SequelRails
     end
 
     initializer 'sequel.spring' do |app|
-      if defined?(::Spring)
+      if defined?(::Spring::Application)
         class ::Spring::Application
           include ::SequelRails::SpringSupport
           alias_method_chain :disconnect_database, :sequel
